@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>RSMS main</title>
+  <script src="./js/jquery-2.2.2.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/coin-slider.min.js"></script>
+  <link rel="stylesheet" href="./css/app.css" />
+  <link rel="stylesheet" href="./css/coin-slider-styles.css" type="text/css">
+</head>
+<body>
+  <div class="AppWrap">
+    <!--header 부분-->
+    <div class="AppHeader">
+      <div class="manuIkon" onmouseover="showSubManu(subManu)" onmouseout="hideSubManu(subManu)">
+        <img src="./img/manu.png">
+        <div class="headerPadding"></div>
+        <div class="subManu" id="subManu">
+          <div class="sub" id="state">ログイン</div>
+          <div class="sub" id="imformation">マイページ</div>
+          <div class="sub" id="order">予約リスト</div>
+          <div class="sub" id="customerCenter">顧客案内センター</div>
+          <div class="sub" id="receipt">モバイルレシート</div>
+        </div> <!--end of subManu-->
+      </div>
+
+      <div class="homeIkon">
+        <a href="./index.html"><img src="./img/home.png"></a>
+      </div>
+
+      <div class="memberInfo" id="memberInfo" />
+        <div class="memberName"></div>
+        こんにちは。
+      </div>
+
+    </div> <!--end of AppHead-->
+
+    <div class="heightPadding"></div>
+
+    <!--title 부분-->
+    <div class="AppTitle">
+      毎月最後の週の月曜日は、定休日です。
+    </div> <!--end of AppTitle-->
+
+    <!--body 부분-->
+    <div class="AppBody">
+      <div class="loginValue">
+        <div class="loginID">
+          &nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;
+          <input type="text" size="30" name="loginID" placeholder="아이디를 입력해 주세요" style=width:70%;height:30px;margin-bottom:10px;>
+        </div>
+        <div class="loginPW">
+          &nbsp;PW&nbsp;&nbsp;
+          <input type="password" size="30" name="loginPW" placeholder="비밀번호를 입력해 주세요" style=width:70%;height:30px>
+        </div>
+      </div>
+      <input type="button" value="LOGIN" class="loginBtn" onclick=login() />
+      <input type="button" value="JOIN" class="joinBtn">
+      <br />
+      <div class="searchSelect">
+      <a href="" class="IDsearch">▶ 아이디 찾기</a><br />
+      <a href="" class="PWsearch">▶ 비밀번호 찾기</a>
+      </div>
+
+    </div> <!--end of AppBody-->
+
+    <div class="heightPadding1"></div>
+    <div class="heightPadding5"></div>
+
+    <!--footer 부분-->
+    <div class="AppFooter">
+      <div class="mapIkon">
+        <a href="./map.html"><img src="./img/map.png"></a>
+      </div>
+      <div class="widthPadding"></div>
+      <div class="eventIKon">
+        <img src="./img/event.png">
+      </div>
+      <div class="widthPadding"></div>
+      <div class="searchIkon">
+        <a href="./search.html"><img src="./img/research.png"></a>
+      </div>
+      <div class="widthPadding"></div>
+      <div class="basketIkon">
+        <a href="./ranking.html"><img src="./img/basket.png"></a>
+      </div>
+    </div> <!--end of AppFooter-->
+  </div>
+</body>
+</html>

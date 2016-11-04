@@ -1,0 +1,72 @@
+.RankingBody {
+  height: 439px;
+  text-align: center;
+}
+
+.rankingTitle {
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.RankingSearch {
+  position: absolute;
+  top: 160px;
+  left: 25px;
+}
+
+.RankingResult {
+  position: absolute;
+  text-align: left !important;
+  top: 210px;
+  left: 5px;
+  padding-bottom: 70px;
+}
+
+
+/* 랭킹 이미지 */
+
+.productRankDiv {
+  position: absolute;
+  width: 340px;
+  height: 100px;
+  left: 5px !important;
+  border: 1px solid #000 !important;
+  margin-bottom: 10px !important;
+}
+
+.rankImg {
+  position: absolute;
+  top: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.productImg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 75px !important;
+}
+
+.productName {
+  position: absolute;
+  top: 20px;
+  left: 172px;
+  width: 170px;
+  font-size: 14px;
+}
+
+.productSell {
+  position: absolute;
+  left: 172px;
+  top: 50px;
+  color: red;
+}
+
+#productRankDiv9 {
+  margin-bottom: 120px !important;
+}

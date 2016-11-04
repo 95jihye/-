@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>RSMS main</title>
+  <script src="./js/jquery-2.2.2.min.js"></script>
+  <script src="./js/receipt.js"></script>
+  <link rel="stylesheet" href="./css/app.css" />
+  <link rel="stylesheet" href="./css/receipt.css" />
+</head>
+<body>
+  <div class="AppWrap">
+    <!--header 부분-->
+    <div class="AppHeader">
+      <div class="manuIkon" onmouseover="showSubManu(subManu)" onmouseout="hideSubManu(subManu)">
+        <img src="./img/manu.png">
+        <div class="headerPadding"></div>
+        <div class="subManu" id="subManu">
+          <div class="sub" id="state">ログイン</div>
+          <div class="sub" id="imformation">マイページ</div>
+          <div class="sub" id="order">予約リスト</div>
+          <div class="sub" id="customerCenter">顧客案内センター</div>
+          <div class="sub" id="receipt">モバイルレシート</div>
+        </div> <!--end of subManu-->
+      </div> <!-- end of manuIkon-->
+
+      <div class="homeIkon">
+        <a href="./index.html"><img src="./img/home.png"></a>
+      </div>
+
+      <div class="memberInfo" id="memberInfo" />
+        <div class="memberName"></div>
+        こんにちは。
+      </div>
+
+    </div> <!--end of AppHead-->
+
+
+    <div class="heightPadding"></div>
+
+    <!--title 부분-->
+    <div class="AppTitle">
+      毎月最後の週の月曜日は、定休日です。
+    </div> <!--end of AppTitle-->
+
+    <!--body 부분-->
+      <div class="AppMemberInfoBody">
+        <button class="pageBtn" value="myReceipt" id="myReceipt">내 영수증</button>
+        <button class="pageBtn" value="myMoney" id="myMoney">내가 쓴 금액</button>
+        <div class="receiptContent"style="overflow: auto; overflow-x:hidden">
+
+      </div><!--end of AppMemberInfoBody-->
+    </div> <!--end of AppBody-->
+    <!--footer 부분-->
+    <div class="AppFooter">
+      <div class="mapIkon">
+        <a href="./map.html"><img src="./img/map.png"></a>
+      </div>
+      <div class="widthPadding"></div>
+      <div class="eventIKon">
+        <img src="./img/event.png">
+      </div>
+      <div class="widthPadding"></div>
+      <div class="searchIkon">
+        <a href="./search.html"><img src="./img/research.png"></a>
+      </div>
+      <div class="widthPadding"></div>
+      <div class="basketIkon">
+        <a href="./ranking.html"><img src="./img/basket.png"></a>
+      </div>
+    </div> <!--end of AppFooter-->
+  </div>
+</body>
+</html>

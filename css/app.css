@@ -1,0 +1,547 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Malgun Gothic';
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+.heightPadding {
+  box-sizing: border-box;
+  padding-top: 18%;
+}
+
+.heightPadding1 {
+  box-sizing: border-box;
+  padding-top: 110%;
+}
+
+.heightPadding2 {
+  box-sizing: border-box;
+  padding-top: 62px;
+}
+
+.heightPadding3 {
+  box-sizing: border-box;
+  padding-top: 326.5px;
+}
+
+.heightPadding4 {
+  box-sizing: border-box;
+  padding-top: 17px;
+}
+
+.heightPadding5 {
+  box-sizing: border-box;
+  padding-top: 9px;
+}
+
+.widthPadding {
+  box-sizing: border-box;
+  width:15%;
+}
+
+.headerPadding {
+  box-sizing: border-box;
+  padding-top: 10%;
+}
+
+/* herader 부분 */
+.AppHeader {
+  position: fixed;
+  min-height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #FFF;
+  border-bottom: 5px solid #000;
+  display: inline;
+  z-index: 100;
+}
+
+.manuIkon {
+  position: fixed;
+  padding: 3%;
+  width: 10%;
+  text-align: left;
+}
+
+.homeIkon {
+  position: fixed;
+  left: 33%;
+  padding: 2%;
+  width: 25%;
+  text-align: center;
+}
+
+#memberInfo {
+  font-size: 15px;
+  padding: 4%;
+  margin-left: 13px;
+  text-align: right;
+  visibility: hidden;
+}
+
+.AppTitle {
+  box-sizing: border-box;
+  width: 100%;
+  height: 11%;
+  border-bottom: 3px solid #000;
+  text-align: center;
+  padding-top: 3%;
+}
+
+/*manu 부분*/
+.subManu {
+  position: fixed;
+  visibility: hidden;
+  z-index: 5;
+}
+
+.sub {
+  position: static;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #000;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+.AppBody {
+  width: 100%;
+  height: 60% !important;
+  z-index: 2;
+}
+
+.AppMainBody {
+  width: 100%;
+  height: 60% !important;
+  z-index: 2;
+}
+
+.AppFooter {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  padding: 1px;;
+  padding-bottom: 20px !important;
+  border-top: 5px solid #000;
+  display: flex;
+  z-index: 101;
+  background-color: #FFF;
+}
+
+/* map.html 부분 */
+.bodyTitle {
+  margin-top: 3%;
+  padding: 2%;
+  text-align: center;
+}
+
+.bodyContent {
+  box-sizing: border-box;
+  margin-top: 7%;
+  text-align: center;
+  width: 100%;
+  height: 60% !important;
+  z-index: 2;
+}
+
+.store {
+  border: 3px solid #000;
+  display: inline-block;
+  width:15%;
+  height:60px;
+  text-align: center;
+  vertical-align:middle;
+  margin-bottom:3%;
+  z-index: 2;
+  word-break:break-all;
+}
+
+#no {
+  border: 3px solid #FFF !important;
+}
+
+/* search 부분*/
+.bodySelect {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.bodySearch {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 3%;
+  padding: 1%;
+  text-align: center;
+}
+
+.searchResult{
+  box-sizing: border-box;
+  position: fixed;
+  margin-left: 5%;
+  margin-top: 2px;
+  margin-bottom: 4%;
+  width: 90%;
+  height: 300px;
+  border: 2px solid #000;
+}
+
+.searchResult > div {
+  box-sizing: border-box;
+  padding: 2%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 3%;
+  position: absolute;
+}
+
+.resultImg {
+  width: 28%;
+  height: 30%;
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-left: 20px;
+  left: 0px;
+}
+
+.resultName {
+  font-weight: bolder;
+  text-align: center;
+  top: 20px !important;
+  left: 40%;
+}
+
+.resultTel {
+  text-align: center;
+  top: 37px !important;
+  left: 40%;
+}
+
+.resultCategory {
+  text-align: center;
+  top: 38px !important;
+  left: 40%;
+}
+
+.resultSell {
+  text-align: center;
+  top: 55px !important;
+  left: 40%;
+}
+
+#detail {
+  text-align: center;
+  height: 15px;
+  font-size: 12px;
+}
+
+/* productInfo 부분 */
+
+.detailResult {
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  width: 90%;
+  height: 301px;
+  border: 2px solid #000;
+  position: fixed;
+  text-align: center;
+}
+
+.detailResult > div {
+  float: left;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 2%;
+  position: absolute;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* 매장 부분 */
+.detailImg {
+  width: 40%;
+  height: 35%;
+  border: 1px solid #000;
+  margin-top: 5%;
+}
+
+.sName, .sTel, .sManage, .sDate {
+  width: 21%;
+  left: 18%;
+  height: 17px;
+  font-weight: bold;
+}
+
+.sName {
+}
+
+.sTel {
+  top: 153px;
+}
+
+.sManage {
+  top: 181px;
+}
+
+.sDate {
+  top: 209px;
+}
+
+.detailName, .detailTel, .detailManage, .detailDate {
+  width: 35%;
+  height: 17px;
+  left: 42.5%;
+  text-align: center;
+}
+
+.detailName {
+}
+
+.detailTel {
+  top: 153px;
+  padding: 0;
+}
+
+.detailManage {
+  top: 181px;
+}
+
+.detailDate {
+  top: 209px;
+  padding: 0;
+}
+
+.sMap {
+  width: 40%;
+  height: 10%;
+  position: absolute;
+  top: 250px;
+  left: 105px;
+}
+
+/* 상품 부분 */
+
+.productNameText, .productName {
+  top: 270px;
+}
+
+.productName {
+  font-weight: bolder;
+}
+
+.productModelText, .productModel {
+  top: 302px;
+}
+
+.productCodeText, .productCode {
+  top: 334px;
+}
+
+.productPriceText, .productPrice {
+  top: 366px;
+}
+
+.productPrice, .productNum {
+  font-weight: bolder;
+  color: red;
+}
+
+.productNameText, .productModelText, .productCodeText, .productPriceText {
+  height: 21px;
+  width: 90px;
+  left: 20px;
+}
+
+.productName, .productModel, .productCode, .productPrice {
+  height: 21px;
+  width: 150px;
+  left: 121px;
+}
+
+
+/* 상품 부분_재고량 */
+
+.productNumInfoText {
+  height: 21px;
+  width: 200px;
+  top: 410px;
+  left: 45px;
+  border: 1px solid #FFF !important;
+  font-weight: bolder;
+}
+
+.productColorText, .productColor {
+  top: 440px;
+}
+
+.productSizeText, .productSize {
+  top: 493px;
+}
+
+.productNumText, .productNum {
+  top: 525px;
+}
+
+.productColorText{
+  text-align: center;
+  height: 42px;
+  width: 90px;
+  left: 20px;
+  line-height: 42px;
+}
+
+.productSizeText {
+  font-size: 13px !important;
+}
+
+.productSizeText, .productNumText {
+  height: 21px;
+  width: 90px;
+  left: 20px;
+}
+
+.productColor {
+  height: 42px;
+  width: 150px;
+  left: 121px;
+}
+
+
+.productSize, .productNum {
+  height: 21px;
+  width: 150px;
+  left: 121px;
+}
+
+.productColor > button {
+  margin: 0.5px;
+  height: 20px;
+}
+
+.productSize > button {
+   margin: 0.5px;
+   height: 20px;
+}
+
+.productMap {
+  width: 130px;
+  height: 20%;
+  position: absolute;
+  top: 575px;
+  left: 50px;
+  margin-bottom: 10px;
+}
+
+.productLike {
+  width: 23% !important;
+  height: 20%;
+  position: absolute;
+  top: 575px;
+  left: 195px;
+  margin-bottom: 10px;
+}
+
+/* 상품 부분_이미지 */
+
+.detailMainImg {
+  width: 60%;
+  height: 60%;
+  border: 3px solid #000;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.detailSubImg {
+  width: 90%;
+  height: 55px;
+  margin-top: 200px !important;
+  margin-left: 11px !important;
+  border: 0px solid #FFF !important;
+}
+
+.detailSubImg1, .detailSubImg2, .detailSubImg3, .detailSubImg4, .detailSubImg5, .detailSubImg6 {
+  width: 44px;
+  height: 50px;
+  margin: 1px;
+  border: 1px solid #000;
+}
+
+/* Login 부분*/
+
+.loginValue {
+  position: fixed;
+  width: 75%;
+  height: 90px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5%;
+  margin-top: 25%;
+  margin-left: 9%;
+  padding-top: 7% !important;
+  padding: 2%;
+  font-size: 20px;
+  border: 5px solid #000;
+}
+
+.loginBtn {
+  position: fixed;
+  width: 30%;
+  height: 40px;
+  top: 345px;
+  left: 16%;
+  color: #FFF;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.joinBtn {
+  position: fixed;
+  width: 30%;
+  height: 40px;
+  top: 345px;
+  left: 54%;
+  color: #FFF;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.IDsearch, .PWsearch {
+  position: fixed;
+  font-size: 20px;
+}
+
+.IDsearch {
+  left: 30%;
+  top: 410px;
+}
+
+.PWsearch {
+  left: 27%;
+  top: 440px;
+}
+
+.searchSelect > a:link, a:visited {
+   text-decoration: underline ;
+   color: #000;
+ }
+
+ .searchSelect > a:hover {
+   text-decoration: none;
+   color: blue;
+ }
